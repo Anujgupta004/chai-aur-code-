@@ -11,7 +11,11 @@
 // let IsLoggedIn = 1
 // let BolleanIsLoggedIn = Boolean(IsLoggedIn)
 // console.log(BolleanIsLoggedIn)
- let IsNumber = 34
- let stringIsNumber = String(IsNumber)
- console.log(stringIsNumber)
- console.log(typeof(stringIsNumber))
+//  let IsNumber = 34
+//  let stringIsNumber = String(IsNumber)
+//  console.log(stringIsNumber)
+//  console.log(typeof(stringIsNumber))
+let two = false + 1;  
+let bollean = Boolean(two)
+console.log(bollean)
+console.log(typeof(bollean))
