@@ -1,19 +1,31 @@
-const sym   = symol("sym")
+const sym   = Symbol ("symbol")
 const jsUser = {
     name : "Anuj",
     age : 12,
     location :"rbl",
     email : "email",
-    mySym : "Mysymbol",
-    [sym] : "orisymbol"
+    [sym] : "sym"
 
 
 }
 console.log(jsUser.email)
 console.log(jsUser["email"])
 
-console.log(jsUser.mySym)
-console.log(typeof jsUser.mySym)
 
-console.log(jsUser.sym)
+console.log(jsUser[sym])
 console.log(typeof jsUser[sym] )
+
+console.log(jsUser)
+// Object.freeze(jsUser)
+
+// jsUser.email = "Rahul@gmail,com"
+// console.log(jsUser)
+jsUser.greeting = function(){
+    console.log("this is greeting")
+}
+
+jsUser.greetingTwo = function(){
+    console.log(`This name is ${this.name}`)
+}
+console.log(jsUser.greeting())
+console.log(jsUser.greetingTwo())
