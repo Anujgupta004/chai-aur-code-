@@ -29,4 +29,15 @@ class Person {
 
 }
 const person1 = new Person("Anuj","Gupta","9336")
-console.log(person1)
+// console.log(person1)
+
+
+/// Json object ko deconstruct krna 
+
+const course = {
+    name : "javascript",
+    price : "234",
+    courseInstructor : "Hitesh"
+}
+const{ courseInstructor : instructor} = course
+console.log(instructor)
